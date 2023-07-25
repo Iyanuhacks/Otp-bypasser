@@ -1,0 +1,14 @@
+ {
+     "builds": [
+         {
+             "src": "api/mainn.py",
+             "use": "@vercel/python"
+         }
+     ],
+     "routes": [
+         {
+             "src": "/(.*)",
+             "dest": "api/mainn.py"
+         }
+     ]
+ }
